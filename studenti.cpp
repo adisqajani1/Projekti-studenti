@@ -9,6 +9,7 @@ struct Studenti {
     int mosha;
     float notaMesatare;
 };
+
 // Funksioni per shfaqjen e te gjithe studenteve
 void shfaqStudentet(const Studenti studentet[], int numriStudentave) {
     if (numriStudentave == 0) {
@@ -23,6 +24,21 @@ void shfaqStudentet(const Studenti studentet[], int numriStudentave) {
         cout << "Mosha: " << studentet[i].mosha << endl;
         cout << "Nota mesatare: " << studentet[i].notaMesatare << "\n";
     }
+
+
+// Funksioni per regjistrimin e nje studenti
+void regjistroStudent(Studenti studentet[], int &numriStudentave) {
+    
+    cout << "Shkruaj emrin e studentit: ";
+    cin >> studentet[numriStudentave].emri;
+    cout << "Shkruaj mbiemrin e studentit: ";
+    cin >> studentet[numriStudentave].mbiemri;
+    cout << "Shkruaj moshen e studentit: ";
+    cin >> studentet[numriStudentave].mosha;
+    cout << "Shkruaj noten mesatare te studentit: ";
+    cin >> studentet[numriStudentave].notaMesatare;
+    numriStudentave++;
+
 }
 
 int main(){
