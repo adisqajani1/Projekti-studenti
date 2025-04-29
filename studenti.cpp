@@ -10,7 +10,6 @@ struct Studenti {
     float notaMesatare;
 };
 
-
 // Funksioni per shfaqjen e te gjithe studenteve
 void shfaqStudentet(const Studenti studentet[], int numriStudentave) {
     if (numriStudentave == 0) {
@@ -49,7 +48,6 @@ void kerkoStudent(const Studenti studentet[], int numriStudentave) {
          cout << "Nuk u gjet asnje student me kete emer.\n";
     }
 }
-
 
 int main(){
   return 0;
